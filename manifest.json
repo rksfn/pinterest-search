@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Pinterest Search Shortcut",
+  "version": "1.0.0",
+  "description": "Press / to focus Pinterest's search bar.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pinterest.com/*",
+        "https://*.pinterest.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
